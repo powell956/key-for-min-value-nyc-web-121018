@@ -3,6 +3,10 @@
 
 def key_for_min_value(name_hash)
 
+  if name_hash == {}
+    return nil
+  end
+
   smallest = (2**(0.size * 8 -2) -1)
   smallest_name = ""
 
